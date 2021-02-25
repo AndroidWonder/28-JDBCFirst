@@ -27,17 +27,17 @@ public class MainActivity extends AppCompatActivity {
 
     private Runnable background = new Runnable() {
         public void run() {
-            String URL = "jdbc:mysql://frodo.bentley.edu:3306/test";
-            String username = "CS280";
-            String password = "CS280";
-
+            String URL = "jdbc:mysql://frodo2.bentley.edu:3306/test";
+            String username = "harry";
+            String password = "harry";
+/*
             try { //load driver into VM memory
                 Class.forName("com.mysql.jdbc.Driver");
             } catch (ClassNotFoundException e) {
                 Log.e("JDBC", "Did not load driver");
 
             }
-
+*/
             Statement stmt = null;
             Connection con = null;
             try { //create connection and statement objects
