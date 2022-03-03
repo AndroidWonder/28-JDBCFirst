@@ -1,7 +1,6 @@
 package jdbcfirst.example.course.com.a28_jdbcfirst;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -27,17 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
     private Runnable background = new Runnable() {
         public void run() {
-            String URL = "jdbc:mysql://frodo2.bentley.edu:3306/test";
+            String URL = "jdbc:mysql://frodo.bentley.edu:3306/test";
             String username = "harry";
             String password = "harry";
-/*
-            try { //load driver into VM memory
-                Class.forName("com.mysql.jdbc.Driver");
-            } catch (ClassNotFoundException e) {
-                Log.e("JDBC", "Did not load driver");
+            
 
-            }
-*/
             Statement stmt = null;
             Connection con = null;
             try { //create connection and statement objects
