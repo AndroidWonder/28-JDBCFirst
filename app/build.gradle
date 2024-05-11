@@ -16,7 +16,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '33.0.1'
+
+    namespace 'jdbcfirst.example.course.com.a28_jdbcfirst'
 }
 
 dependencies {
